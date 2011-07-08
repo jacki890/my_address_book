@@ -1,0 +1,26 @@
+%h1 Add Contact
+
+%form{:action => "/new", :method => :post}
+  %p
+    %label{:for => "first_name"} First Name
+    %input{:type => "text", :name => "first_name"}
+
+  %p
+    %label{:for => "last_name"} Last Name
+    %input{:type => "text", :name => "last_name"}
+
+  %p
+    %label{:for => "phone_number"} Phone Number
+    %input{:type => "text", :name => "phone_number"}
+
+  %p
+    %label{:for => "street_address"} Street Address
+    %input{:type => "text", :name => "street_address"}
+
+  %p
+    %label{:for => "zip_code"} Zip Code
+    %input{:type => "text", :name => "zip_code"}
+
+  %p
+    %input{:type => "submit"}
+

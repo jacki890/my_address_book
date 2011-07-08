@@ -1,0 +1,8 @@
+%h1 Contacts
+
+%ul
+  - @contacts.each do |c|
+    %li
+      %a{:href => "/#{c.to_param}"}= c.full_name
+
+%a{:href=>"/"} Back

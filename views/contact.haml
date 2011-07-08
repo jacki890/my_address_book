@@ -1,0 +1,14 @@
+%h1= @contact.full_name
+
+%p
+  %label Phone Number:
+  = @contact.phone_number
+%p
+  %label Street Address:
+  = @contact.street_address
+%p
+  %label Zip Code:
+  = @contact.zip_code
+
+%h2 Edit this entry
+%a{:href => "/#{@contact.id}/edit"} Edit

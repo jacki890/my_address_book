@@ -1,0 +1,9 @@
+%h1 Address book
+
+%ul#alphabet
+  - ('a'..'z').each do |letter|
+    %li
+      %a{:href => "/#{letter}"}= letter
+
+%h2 Add new entry
+%a{:href => "/new"} New
